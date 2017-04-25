@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/font.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/backToTop.js"></script>
+<!--	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-size: 100%;
+		}
+		.clearfix{
+			clear:both;
+		}
+		body a{
+			transition: 0.5s all;
+		}
+
+
+		.container{
+			padding: 0;
+			width: 100%;
+		}
+
+		.navbar{
+			background-color: rgba(12, 12, 16, 1);
+			text-align: center;
+			margin: 0;
+		}
+
+		.navbar-brand{
+			font-size: 2.2em;
+			margin-left: 4em;
+			padding: 0.8em 0 0.5em 0;
+			font-family: "Hobo Std";
+		}
+
+		.collapse ul{
+			margin-right: 8em;
+			
+		}
+
+		.collapse ul li{
+			font-family: "Buxton Sketch";
+			font-size: 1.5em;
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+
+		.about{
+			background: url(img/mapleleaf2.jpg) no-repeat -15% 100%;
+		}
+
+		.about .row .col-md-5:first-child{
+			margin-left: 3em;
+		}
+
+		.about h1,
+		.why h1,
+		.team h1{
+			font-family: 'Comic Sans MS';
+			text-align: center;
+			font-size: 4em;
+			padding: 1.5em 0;
+			margin:0;
+		}
+
+		.about .row h3{
+			font-family: 'Comic Sans MS';
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.about .row p{
+			font-family: '微软雅黑';
+			text-indent: 1.5em;
+			color: #000;
+			font-size: 1.2em;
+		}
+
+		.about .row .divide{
+			margin-top: 3em;
+		}
+
+		
+
+		.why .row{
+			margin: 0 auto;
+		}
+
+		.why .row .col-md-4{
+			padding: 0;
+			width: 28%;
+			margin-left: 4em;
+		}
+
+		.why .row h4{
+			font-size: 1.5em;
+			font-weight: bold;
+			line-height: 1em;
+			font-family: '微软雅黑';
+		}
+
+		.why .row p{
+			margin-top: 1.5em;
+			font-size: 1em;
+		}
+
+		.why .row a{
+			margin-top: 1em;
+		    display: inline-block;
+		    padding: .2em 1em;
+		    border-bottom: 2px solid #ff6a4a;
+		    border-top: 2px solid #ff6a4a;
+		    font-weight: 700;
+		    font-size: 1em;
+		    line-height: 2em;
+		    color: #ff6a4a;
+		    text-decoration: none;
+		}
+
+		.why .row a:hover{
+			color: #000;
+			border-bottom: 2px solid #000;
+		    border-top: 2px solid #000;
+		}
+
+
+		.team{
+			background: url(img/mapleleaf.jpg) no-repeat 100% 105%;
+		}
+
+		.team .row{
+			margin: 0 auto;
+			padding-bottom: 5em;
+
+		}
+
+		.team .row h4{
+			color: #F25826;
+			padding-top: 1em;
+			font-weight: bold;
+		}
+		
+		.team .row p{
+			font-size: 1em;
+			line-height: 1.8em;
+		}
+
+
+		.footer{
+			padding: 3em 0;
+			background: #2B2B2B;
+		}
+
+		.footer .footer-container{
+			padding-right: 15px;
+			padding-left: 15px;
+			margin: 0 7.2em;
+		}
+
+		.footer .footer-container h3{
+			color: #FFFFFF;
+			font-size: 2em;
+			margin: 0 0 1em 0;
+			font-family: "Comic Sans MS";
+		}
+
+		.footer .footer-container ul li{
+			display: block;
+			margin: .5em 0;
+			color: #A2A2A2;
+		}
+
+		.footer .footer-container ul li a{
+			color: #A2A2A2;
+			font-size: 1em;
+			text-decoration: none;
+		}
+
+		.footer .footer-container ul li a:hover{
+			color: #fff;
+		}
+
+		.footer .footer-container form input[type='text']{
+			font-size: 1.2em;
+			margin-bottom: 1em;
+			width: 100%;			
+			border: 1px solid #ff9900;
+			background: #FFFFFF;
+			padding: 0.5em;
+			border-radius: 5px;
+		}
+
+		.footer .footer-container form input[type="submit"]{
+			color: #FFF;
+			background: #ff6a4a;
+			font-size: 1em;
+			border: none;
+			border-radius: 5px;
+			padding: 0.5em 1em;
+			transition: 0.5s all;
+		}
+
+		.footer .footer-container form input[type="submit"]:hover{
+			background-color: #faa;
+		}
+
+		.footer-bottom{
+			padding: 1em 0;
+			background: #191919;
+			text-align: center;
+		}
+
+		.footer-bottom p{
+			font-size: 1em;
+			color: #fff;
+			margin: 0;
+		}
+
+		.top{
+			background-color: #ff6a4a;
+			width: 1.4em;
+			height: 1.4em;
+			font-size: 2em;
+			text-align: center;
+			border-radius: 1.4em;
+			color: #aaf;
+			cursor: pointer;
+			position: fixed;
+			right:30px;
+			bottom:30px;
+			display: none;
+		}
+
+		.top:hover{
+			opacity: 0.7;
+		}
+
+
+
+
+
+
+
+
+
+		/*==================Responsive Start======================*/
+		@media only screen and (max-width: 1024px){
+
+			.navbar-brand{		
+				margin-left: 0.5em;
+			}
+
+			.collapse ul{
+				margin-right: 0.2em;
+			}
+
+			
+			.about{
+				background: url(img/mapleleaf2.jpg) no-repeat -20% -100%;
+			}
+
+			.about .row{
+				margin: 0 auto;
+			}
+
+			.about .row .divide{
+				margin-top: 3em;
+			}
+
+			.about .row h3{
+				font-size: 1.5em;
+				margin-top: 0;
+				font-weight: bold;
+			}
+
+			.about .row p{
+				font-size: 1em;
+				margin-bottom: 1em;
+			}
+
+			.about .row img{
+				width: 135%;
+				height: 28em;
+			}
+
+
+			.why .row .col-md-4{
+				width: 100%;
+				margin: 0;
+				padding-left: 1em;
+			}
+
+			.why .row .col-md-4 + .col-md-4{
+				margin-top: 5em;
+			}
+
+			.why .row h4,
+			.why .row p{
+				text-align: center;
+			}
+
+			.why .row .a{
+				text-align: center;
+			}
+
+
+
+			.team .row img{
+				width: 100%;
+			}
+
+			.team .row h4{
+				font-size: 1.2em;
+			}
+
+			.team .row p{
+				font-size: 1em;
+			}
+
+			.footer .footer-container h3{
+				font-size: 1.5em;
+			}
+
+			.footer .footer-container ul li a{
+				font-size: 0.8em;	
+			}
+		}
+
+
+
+		@media only screen and (max-width: 800px){
+			.collapse ul li{
+				font-size: 1.2em;
+				padding: 0.5em 0.5em;
+			}
+
+			.navbar-inverse .navbar-brand{
+				padding: 0.5em 0 0 0;
+			}
+	
+
+			.about .row img{
+				height: 25em;
+				width: 100%;
+			}
+
+			.about .row .col-md-5:first-child{
+				margin: 0;
+			}
+
+
+
+			.why .row h4{
+				width: 50%;
+				margin:0 auto;
+			}
+
+
+
+			.team .row{
+				padding: 0;
+			}
+			.team .row .col-md-3{
+				width: 40%;
+				float: left;
+				margin-left: 3em;
+				margin-bottom: 3em;
+			}
+
+			.footer .footer-container{
+				margin: 0;
+				padding: 0;
+			}
+			.footer .footer-container .row{
+				padding: 0;
+				margin: 0;
+
+			}
+
+			.footer .footer-container .row .col-md-3:first-child{
+				display: none;
+			}
+
+			.footer .footer-container .row .col-md-3{
+				float: left;
+				margin-left: 2%;
+			}
+
+			.footer .footer-container ul li a{
+				font-size: 1em;		
+			}
+
+			.footer .footer-container .row .col-md-3:nth-child(4){
+				width: 32%;
+			}
+			
+		}
+
+
+		@media only screen and (min-width: 441px) and (max-width: 736px){
+			.about h1, 
+			.why h1,
+			.team h1{
+				font-size: 3em;
+				font-weight: bold;
+			}
+
+			.about .row .divide{
+				margin-top: 2em;
+			}
+			.about .row p:last-child{
+				margin-bottom: 2em;
+			}
+			.about .row img{
+				height: 23em;
+			}
+
+			.why .row .col-md-4 + .col-md-4{
+				margin-top: 3em;
+			}
+		}
+
+
+		@media only screen and (max-width: 440px){
+			.about h1,
+			.why h1,
+			.team h1{
+				font-size: 2.2em;
+				padding: 1.2em 0;
+				font-weight: bold;
+			}
+
+			.about{
+			    background: url(img/mapleleaf2.jpg) no-repeat 0% 0%;	
+			}
+
+			.about .row h3{
+				font-size: 1.2em;
+			}
+
+			.about .row img{
+				display: none;
+			}
+			
+			.why .row .col-md-4{
+				padding: 0;
+			}
+
+			.why .row h4{
+				font-size: 1.1em;
+				width: 75%;
+			}
+
+			.why .row p{
+				width: 90%;
+				margin: 0.5em auto;
+			}
+
+			.team .row .col-md-3{
+				width: 75%;
+			}
+
+
+
+			.footer .footer-container ul li a{
+				font-size: .8em;
+			}
+
+			.footer .footer-container .row .col-md-3:nth-child(4){
+				width: 60%;
+				margin-top: 1em;
+			}
+
+			.footer .footer-container form input[type='text']{
+				font-size: .9em;
+			}
+
+			.footer .footer-container form input[type="submit"]{
+				font-size: 0.7em;
+			}
+
+			.footer-bottom p{
+				font-size: 0.1em;
+			}
+		}
+
+		</style>
+-->
+</head>
+<body style="overflow:scroll;overflow-x:hidden">
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">	
+					<a href="javascript:" class="navbar-brand">Red Wine</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			</div>
+
+			<div id="mynavbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="gallery2.html">Gallery2</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+				</ul>	
+			</div>
+
+		</nav>
+	</div>
+
+	<div class="about">
+		<h1>ABOUT US</h1>
+		<div class="row">
+			<div class="col-md-5">
+				<h3>SEVEN SPIRITS WINES</h2>
+				<p>SEVEN Spirits Wines are made with a philosophy deeply embedded in the Australian lifestyle and culture, drawing on millennia of nature’s influence over the land and the soils.  We work with our environment and our soils and apply the winemakers craft to making great wines.</p>
+
+				<br>
+
+				<h3 class="divide">OUR WINES PHILOSOPHY </h3>
+				<p>Australia is an old country, as old as any land in the world. Long before the colonisation by European settlers, the first people who wandered Australia learned to live in this harsh and often inhospitable land.They led a lifestyle that lived within the capability of the land. </p>
+			</div>
+			<div class="col-md-5">
+				<img src="img/sherry.png" alt="" style="box-shadow:5px -5px 3px #999">
+			</div>
+		</div>
+		
+	</div>
+		
+	
+	<div class="why">
+		<h1>WHY CHOOSE US</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<h4>Donec cursus felis a enim egestas, vitae porttitor elit condimentum.</h4>
+				<p>Etiam ex lorem, cursus vitae placerat a, suscipit dapibus tortor. Sed nec augue enim. Cras rhoncus ultricies eros, interdum aliquam eros iaculis id.</p>
+				<div class="a"><a href="javascript:">MORE</a></div>
+			</div>
+			<div class="col-md-4">
+				<h4>Donec cursus felis a enim egestas, vitae porttitor elit condimentum.</h4>
+				<p>Etiam ex lorem, cursus vitae placerat a, suscipit dapibus tortor. Sed nec augue enim. Cras rhoncus ultricies eros, interdum aliquam eros iaculis id.</p>
+				<div class="a"><a href="javascript:">MORE</a></div>
+			</div>
+			<div class="col-md-4">
+				<h4>Donec cursus felis a enim egestas, vitae porttitor elit condimentum.</h4>
+				<p>Etiam ex lorem, cursus vitae placerat a, suscipit dapibus tortor. Sed nec augue enim. Cras rhoncus ultricies eros, interdum aliquam eros iaculis id.</p>
+				<div class="a"><a href="javascript:">MORE</a></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="team">
+		<h1>OUR TEAM</h1>
+		<div class="row">
+			<div class="col-md-3">
+				<img src="img/teammember1.jpg" alt="" class="teammember">
+				<h4>Convallis Id Mauris</h4>
+				<p>Curabitur orci massa convallis id mauris sed venenatis porttitor at leo nec purus</p>
+			</div>
+			<div class="col-md-3">
+				<img src="img/teammember2.jpg" alt="" class="teammember">
+				<h4>Massa Convallis</h4>
+				<p>Curabitur orci massa convallis id mauris sed venenatis porttitor at leo nec purus</p>
+			</div>
+			<div class="col-md-3">
+				<img src="img/teammember3.jpg" alt="" class="teammember">
+				<h4>Leonec Purus</h4>
+				<p>Curabitur orci massa convallis id mauris sed venenatis porttitor at leo nec purus</p>
+			</div>
+			<div class="col-md-3">
+				<img src="img/teammember4.jpg" alt="" class="teammember">
+				<h4>Venenatis Portt</h4>
+				<p>Curabitur orci massa convallis id mauris sed venenatis porttitor at leo nec purus</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="login" style="display:none" class="modal fade">
+		
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<div class="close" data-dismiss="modal">×</div>
+						<h3>用户登录</h3>
+					</div>
+
+					<div class="modal-body">
+						<div class="username">
+							用户名:
+							<br>
+							<input type="text" style="margin-top:0.5em"> 
+						</div>
+						<br>
+						<div class="password">
+							密码:		
+							<br>	 
+							<input type="password" style="margin-top:0.5em">
+						</div>
+						
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn btn-primary save">登录</button>
+						<button class="btn btn-danger" >注册</button>
+					</div>
+
+				</div>
+			</div>
+		
+	</div>
+
+	
+
+
+	<div class="footer">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>DETAIL</h3>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="javascript:">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>SOCIAL</h3>
+					<ul>
+						<li><a href="javascript:">QQ</a></li>
+						<li><a href="javascript:">Wetchat</a></li>
+						<li><a href="javascript:">Weibo</a></li>
+						<li><a href="javascript:">Google+</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>CONTACT</h3>
+					<ul>
+						<li><a href="javascript:">756 gt globel Place,</a></li>
+						<li><a href="javascript:">CD-Road,M 07 435.</a></li>
+						<li><a href="javascript:">Telephone: +1 234 567 9871</a></li>
+						<li><a href="javascript:">FAX: +1 234 567 9871</a></li>
+						<li>
+							Email:
+							<a href="javascript:">Example@mail.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>NEWSLETTER</h3>
+					<form action="">
+						<input type="text" placeholder="Email address">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>Copyright © 2015.Company name All rights reserved.</p>
+	</div>
+	
+	<!-- 回到顶部 -->
+	<div class="top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+	</div>
+</body>
+<script>
+$(function(){
+	var teammemberImg = $('.teammember');
+	for(var i=0; i<teammemberImg.length; i++){
+		teammemberImg[i].onmouseover = function(){
+			this.style.boxShadow = "5px 5px 3px #999";
+		}
+		teammemberImg[i].onmouseout = function(){
+			this.style.boxShadow = "0px 0px 0px #fff";
+		}
+	}
+});
+	
+</script>
+</html>

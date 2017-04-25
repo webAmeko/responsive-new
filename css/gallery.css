@@ -1,0 +1,403 @@
+		*{
+			padding: 0;
+			margin: 0;
+			font-size: 100%;
+		}
+		
+		.clearfix{
+			clear:both;
+		}
+
+		body{
+			padding-right: 0px!important;
+		}
+
+		body a{
+			transition: 0.5s all;
+		}
+
+
+		.container{
+			padding: 0;
+			width: 100%;
+		}
+
+		.navbar{
+			background-color: rgba(12, 12, 16, 1);
+			text-align: center;
+			margin: 0;
+		}
+
+		.navbar-brand{
+			font-size: 2.2em;
+			margin-left: 4em;
+			padding: 0.8em 0 0.5em 0;
+			font-family: "brandFont";
+		}
+
+		.collapse ul{
+			margin-right: 8em;
+			
+		}
+
+		.collapse ul li{
+			font-family: "navFont";
+			font-size: 1.5em;
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+
+		.gallery{
+			padding-bottom: 5em;
+			background: url(../img/mapleleaf2.jpg) no-repeat 0 0;
+		}
+		.gallery h1{
+			font-family: 'topicFont';
+		    text-align: center;
+		    font-size: 4em;
+		    padding: 1.5em 0;
+		    margin: 0 1em;
+		}
+
+
+/*==========================控制两边a=========================*/
+		.gallery a{
+			margin-top: 2.5em;
+			height: 42em;
+
+		}
+
+		
+		.gallery .carousel .carousel-inner{
+			height: 70%;
+		}
+
+		.gallery .carousel img{
+			width: 50%;
+		}
+
+
+		.gallery .carousel .carousel-inner .item .col-md-6:first-child{
+			padding: 0;
+			text-align: center;
+		}
+
+		.gallery .carousel .carousel-inner .item .col-md-6:last-child{
+			padding: 0;
+			text-align: left;
+		}
+
+		.gallery .carousel .carousel-inner .item h2{
+			font-family: 'titleFont';
+			font-size: 3.1em;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 0 1em 0;
+			color: #5C3317;
+			text-shadow: 3px 3px 6px #FF0000;
+		}
+
+		.gallery .carousel .carousel-inner .item p{
+			font-family: 'navFont';
+			font-size: 2.2em;
+			text-indent: 2em;
+		}
+
+
+		.footer{
+			padding: 3em 0;
+			background: #2B2B2B;
+		}
+
+		.footer .footer-container{
+			padding-right: 15px;
+			padding-left: 15px;
+			margin: 0 7.2em;
+		}
+
+		.footer .footer-container h3{
+			color: #FFFFFF;
+			font-size: 2em;
+			margin: 0 0 1em 0;
+			font-family: "topicFont";
+		}
+
+		.footer .footer-container ul li{
+			display: block;
+			margin: .5em 0;
+			color: #A2A2A2;
+		}
+
+		.footer .footer-container ul li a{
+			color: #A2A2A2;
+			font-size: 1em;
+			text-decoration: none;
+		}
+
+		.footer .footer-container ul li a:hover{
+			color: #fff;
+		}
+
+		.footer .footer-container form input[type='text']{
+			font-size: 1.2em;
+			margin-bottom: 1em;
+			width: 100%;			
+			border: 1px solid #ff9900;
+			background: #FFFFFF;
+			padding: 0.5em;
+			border-radius: 5px;
+		}
+
+		.footer .footer-container form input[type="submit"]{
+			color: #FFF;
+			background: #ff6a4a;
+			font-size: 1em;
+			border: none;
+			border-radius: 5px;
+			padding: 0.5em 1em;
+			transition: 0.5s all;
+		}
+
+		.footer .footer-container form input[type="submit"]:hover{
+			background-color: #faa;
+		}
+
+		.footer-bottom{
+			padding: 1em 0;
+			background: #191919;
+			text-align: center;
+		}
+
+		.footer-bottom p{
+			font-size: 1em;
+			color: #fff;
+			margin: 0;
+		}
+
+		.top{
+			background-color: #ff6a4a;
+			width: 1.4em;
+			height: 1.4em;
+			font-size: 2em;
+			text-align: center;
+			border-radius: 1.4em;
+			color: #aaf;
+			cursor: pointer;
+			position: fixed;
+			right:30px;
+			bottom:30px;
+			display: none;
+		}
+
+		.top:hover{
+			opacity: 0.7;
+		}
+
+
+		.modal-open .modal{
+			overflow-y: hidden;
+		}
+		#login{
+			display: none;
+			padding-right: 0px !important;
+		}
+
+
+
+
+
+
+
+
+	/*==================Responsive Start======================*/
+
+		@media only screen and (max-width: 1024px){
+
+			.navbar-brand{		
+				margin-left: 0.5em;
+			}
+
+			.collapse ul{
+				margin-right: 0.2em;
+			}
+
+			
+			.gallery .carousel img{
+				width: 70%;
+			}
+
+
+/*================控制两边a================*/
+			.gallery a{
+				height: 45em;
+			}
+
+
+			.footer .footer-container h3{
+				font-size: 1.5em;
+			}
+
+			.footer .footer-container ul li a{
+				font-size: 0.8em;	
+			}
+
+		}
+
+
+
+		@media only screen and (max-width: 800px){
+				.collapse ul li{
+					font-size: 1.2em;
+					padding: 0.5em 0.5em;
+				}
+
+				.navbar-inverse .navbar-brand{
+					font-size: 2em;
+					
+				}
+
+				.gallery h1{
+					font-size: 3em;
+				}
+
+				.gallery .carousel .carousel-inner .item .col-md-6{
+					float: left;
+					width: 50%;
+				}
+
+				.gallery .carousel img{
+					width: 60%;
+				}
+
+				.gallery .carousel .carousel-inner .item h2{
+					font-size: 2.2em;
+				}
+
+				.gallery .carousel .carousel-inner .item p{
+					font-size: 1.8em;
+				}
+
+	/*==========================控制两边a=========================*/
+				.gallery a{
+					height: 35em;
+				}
+			
+
+				.footer .footer-container{
+					margin: 0;
+					padding: 0;
+				}
+				.footer .footer-container .row{
+					padding: 0;
+					margin: 0;
+				}
+
+				.footer .footer-container .row .col-md-3:first-child{
+					display: none;
+				}
+
+				.footer .footer-container .row .col-md-3{
+					float: left;
+					margin-left: 2%;
+				}
+
+				.footer .footer-container ul li a{
+					font-size: 1em;		
+				}
+
+				.footer .footer-container .row .col-md-3:nth-child(4){
+					width: 32%;
+				}
+				
+			}
+
+
+		@media only screen and (max-width: 767px) and (min-width: 568px){
+			.gallery .carousel .carousel-inner .item p{
+					font-size: 1.2em;
+					line-height: 1.8em;
+			}
+			.gallery a{
+				height: 30em;
+			}
+		}
+
+
+
+		@media only screen and (max-width: 440px){
+			.gallery .carousel img{
+				width: 100%;
+			}
+			
+			.gallery{
+				padding-bottom: 1em;
+			}
+
+			.gallery a{
+				height: 40em;
+			}
+
+			.gallery h1{
+				display: none;
+			}
+
+			.gallery .carousel .carousel-inner .item p{
+				font-size: 1.2em;
+			}
+
+
+			.gallery .carousel .carousel-inner .item .col-md-6{
+				width: 70%;
+				float: none;
+				margin: 0 auto;
+			}
+
+			.gallery .carousel .carousel-inner .item .col-md-6{
+				margin-top: 1.5em;
+			}
+
+
+
+			.footer .footer-container{
+				margin: 0;
+				padding: 0;
+			}
+
+			.footer .footer-container h3{
+				font-size: 1em;
+			}
+
+			.footer .footer-container ul li{
+				font-size: 0.8em;
+			}
+
+			.footer .footer-container ul li{
+				margin: 0.5em 0!important;
+				display: block;
+			}
+
+			.footer .footer-container .col-md-3{
+				float: left;
+				margin-left: 1.2em;
+			}
+
+			.footer .footer-container .row .col-md-3:last-child{
+				margin-top: 2%;
+			}
+
+			.footer .footer-container form {
+				width: 180%;
+			}
+
+			.footer .footer-container form input[type='text']{
+				font-size: .9em;
+			}
+
+			.footer .footer-container form input[type="submit"]{
+				font-size: 0.7em;
+			}
+
+			.footer-bottom p{
+				font-size: 0.8em;
+			}
+		}

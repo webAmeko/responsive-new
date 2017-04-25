@@ -1,0 +1,29 @@
+@font-face{
+	font-family: brandFont;
+	src : url('HoboStd.otf');
+}
+
+@font-face{
+	font-family: navFont;
+	src : url('BuxtonSketch.ttf');
+}
+
+@font-face{
+	font-family: topicFont;
+	src : url('comici.ttf');
+}
+
+@font-face{
+	font-family: titleFont;
+	src : url('CinzelDecorative-Regular.otf');
+}
+
+@font-face{
+	font-family: txtFont;
+	src : url("GiddyupStd.otf");
+}
+
+@font-face{
+	font-family: blogFont;
+	src : url('roman.fon');
+}

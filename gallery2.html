@@ -1,0 +1,480 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/chromagallery.css">
+	<link rel="stylesheet" href="css/font.css">
+	
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-size: 100%;
+		}
+		.clearfix{
+			clear:both;
+		}
+
+		body,
+		html{ 
+			height: 100%; 
+			background-color: #191919; 
+		}
+
+		body a{
+			transition: 0.5s all;
+		}
+
+
+		.container{
+			padding: 0;
+			width: 100%;
+		}
+
+		.navbar{
+			background-color: rgba(12, 12, 16, 1);
+			text-align: center;
+			margin: 0;
+		}
+
+		.navbar-brand{
+			font-size: 2.2em;
+			margin-left: 4em;
+			padding: 0.8em 0 0.5em 0;
+			font-family: "brandFont";
+		}
+
+		.collapse ul{
+			margin-right: 8em;
+			
+		}
+
+		.collapse ul li{
+			font-family: "navFont";
+			font-size: 1.5em;
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+		.gallery h1{
+			font-family: 'topicFont';
+			text-align: center;
+			font-size: 4em;
+			padding: 0.8em 0;
+			margin:0;
+			color: #fff;
+		}
+
+		.content
+		{
+			width: 95%;
+			height: 100%;
+			margin: 10px auto;
+		}
+
+
+
+		@media screen and (min-width: 980px) /* Desktop */ {
+			.content {
+				width: 71%;
+			}
+		}		
+
+
+		.mygallery
+		{
+			margin: 25px 0;
+		}
+
+
+		.footer{
+			padding: 3em 0;
+			background: #2B2B2B;
+		}
+
+		.footer .footer-container{
+			padding-right: 15px;
+			padding-left: 15px;
+			margin: 0 7.2em;
+		}
+
+		.footer .footer-container h3{
+			color: #FFFFFF;
+			font-size: 2em;
+			margin: 0 0 1em 0;
+			font-family: "topicFont";
+		}
+
+		.footer .footer-container ul li{
+			display: block;
+			margin: .5em 0;
+			color: #A2A2A2;
+		}
+
+		.footer .footer-container ul li a{
+			color: #A2A2A2;
+			font-size: 1em;
+			text-decoration: none;
+		}
+
+		.footer .footer-container ul li a:hover{
+			color: #fff;
+		}
+
+		.footer .footer-container form input[type='text']{
+			font-size: 1.2em;
+			margin-bottom: 1em;
+			width: 100%;			
+			border: 1px solid #ff9900;
+			background: #FFFFFF;
+			padding: 0.5em;
+			border-radius: 5px;
+		}
+
+		.footer .footer-container form input[type="submit"]{
+			color: #FFF;
+			background: #ff6a4a;
+			font-size: 1em;
+			border: none;
+			border-radius: 5px;
+			padding: 0.5em 1em;
+			transition: 0.5s all;
+		}
+
+		.footer .footer-container form input[type="submit"]:hover{
+			background-color: #faa;
+		}
+
+		.footer-bottom{
+			padding: 1em 0;
+			background: #191919;
+			text-align: center;
+		}
+
+		.footer-bottom p{
+			font-size: 1em;
+			color: #fff;
+			margin: 0;
+		}
+
+		.top{
+			background-color: #ff6a4a;
+			width: 1.4em;
+			height: 1.4em;
+			font-size: 2em;
+			text-align: center;
+			border-radius: 1.4em;
+			color: #aaf;
+			cursor: pointer;
+			position: fixed;
+			right:30px;
+			bottom:30px;
+			display: none;
+		}
+
+		.top:hover{
+			opacity: 0.7;
+		}
+
+
+
+
+	/*==================Responsive Start======================*/
+
+		@media only screen and (max-width: 1024px){
+			.content {
+			  	width: 75%;
+			}
+			.navbar-brand{		
+				margin-left: 0.5em;
+			}
+
+			.collapse ul{
+				margin-right: 0.2em;
+			}
+
+			.footer .footer-container h3{
+				font-size: 1.5em;
+			}
+
+			.footer .footer-container ul li a{
+				font-size: 0.8em;	
+			}
+
+		}
+
+
+
+		@media only screen and (max-width: 800px){
+				.content {
+				  	width: 84%;
+				}
+				.collapse ul li{
+					font-size: 1.2em;
+					padding: 0.5em 0.5em;
+				}
+
+				.navbar-inverse .navbar-brand{
+					font-size: 2em;
+		
+				}
+
+				.gallery h1{
+					font-size: 3em;
+					font-weight: bold;
+				}
+
+
+				.footer .footer-container{
+					margin: 0;
+					padding: 0;
+				}
+				.footer .footer-container .row{
+					padding: 0;
+					margin: 0;
+				}
+
+				.footer .footer-container .row .col-md-3:first-child{
+					display: none;
+				}
+
+				.footer .footer-container .row .col-md-3{
+					float: left;
+					margin-left: 2%;
+				}
+
+				.footer .footer-container ul li a{
+					font-size: 1em;		
+				}
+
+				.footer .footer-container .row .col-md-3:nth-child(4){
+					width: 32%;
+				}
+				
+			}
+
+
+		@media only screen and (max-width: 440px){
+			.content {
+			  	width: 91%;
+			}
+
+			.gallery h1{
+				font-size: 2.2em;
+				padding: 1.2em 0;
+			}
+
+			.footer .footer-container{
+				margin: 0;
+				padding: 0;
+			}
+
+			.footer .footer-container h3{
+				font-size: 1em;
+			}
+
+			.footer .footer-container ul li{
+				font-size: 0.8em;
+			}
+
+			.footer .footer-container ul li{
+				margin: 0.5em 0!important;
+				display: block;
+			}
+
+			.footer .footer-container .col-md-3{
+				float: left;
+				margin-left: 1.2em;
+			}
+
+			.footer .footer-container .row .col-md-3:last-child{
+				margin-top: 2%;
+			}
+
+			.footer .footer-container form {
+				width: 180%;
+			}
+
+			.footer .footer-container form input[type='text']{
+				font-size: .9em;
+			}
+
+			.footer .footer-container form input[type="submit"]{
+				font-size: 0.7em;
+			}
+
+			.footer-bottom p{
+				font-size: 0.8em;
+			}
+		}
+
+
+		
+	</style>
+
+
+</head>
+<body style="overflow:scroll;overflow-x:hidden">
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">	
+					<a href="javascript:" class="navbar-brand">Red Wine</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			</div>
+
+			<div id="mynavbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="gallery2.html">Gallery2</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+				</ul>	
+			</div>
+
+		</nav>
+	</div>
+
+
+	<div class="gallery">
+		<h1>Gallery</h1>
+		<div class="content">
+			<div class="chroma-gallery mygallery">
+				<img src="img/thumbs/wine1.jpg" alt="Pic 1" data-largesrc="img/wine1.jpg">
+				<img src="img/thumbs/wine2.jpg" alt="Pic 2" data-largesrc="img/wine2.jpg">
+				<img src="img/thumbs/1.jpg" alt="Pic 3" data-largesrc="img/1.jpg">
+				<img src="img/thumbs/wine4.jpg" alt="Pic 4" data-largesrc="img/wine4.jpg">
+				<img src="img/thumbs/wine5.jpg" alt="Pic 5" data-largesrc="img/wine5.jpg">
+				<img src="img/thumbs/wine6.jpg" alt="Pic 6" data-largesrc="img/wine6.jpg">
+				<img src="img/thumbs/9.jpg" alt="Pic 7" data-largesrc="img/9.jpg">
+
+				<img src="img/thumbs/wine7.jpg" alt="Pic 8" data-largesrc="img/wine7.jpg">
+				<img src="img/thumbs/wine8.jpg" alt="Pic 9" data-largesrc="img/wine8.jpg">
+				<img src="img/thumbs/wine9.jpg" alt="Pic 10" data-largesrc="img/wine9.jpg">
+				<img src="img/thumbs/3.jpg" alt="Pic 11" data-largesrc="img/3.jpg">
+
+				<img src="img/thumbs/wine10.jpg" alt="Pic 12" data-largesrc="img/wine10.jpg">
+				<img src="img/thumbs/blog2.jpg" alt="Pic 13" data-largesrc="img/blog2.jpg">
+				<img src="img/thumbs/11.jpg" alt="Pic 14" data-largesrc="img/11.jpg">
+				<img src="img/thumbs/wine11.jpg" alt="Pic 15" data-largesrc="img/wine11.jpg">
+			</div>
+		</div>
+	
+	</div>
+
+	<div id="login" style="display:none" class="modal fade">
+		
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<div class="close" data-dismiss="modal">×</div>
+						<h3>用户登录</h3>
+					</div>
+
+					<div class="modal-body">
+						<div class="username">
+							用户名:
+							<br>
+							<input type="text" style="margin-top:0.5em"> 
+						</div>
+						<br>
+						<div class="password">
+							密码:		
+							<br>	 
+							<input type="password" style="margin-top:0.5em">
+						</div>
+						
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn btn-primary save">登录</button>
+						<button class="btn btn-danger" >注册</button>
+					</div>
+
+				</div>
+			</div>
+		
+	</div>
+
+
+	<div class="footer">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>DETAIL</h3>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="javascript:">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>SOCIAL</h3>
+					<ul>
+						<li><a href="javascript:">QQ</a></li>
+						<li><a href="javascript:">Wetchat</a></li>
+						<li><a href="javascript:">Weibo</a></li>
+						<li><a href="javascript:">Google+</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>CONTACT</h3>
+					<ul>
+						<li><a href="javascript:">756 gt globel Place,</a></li>
+						<li><a href="javascript:">CD-Road,M 07 435.</a></li>
+						<li><a href="javascript:">Telephone: +1 234 567 9871</a></li>
+						<li><a href="javascript:">FAX: +1 234 567 9871</a></li>
+						<li>
+							Email:
+							<a href="javascript:">Example@mail.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>NEWSLETTER</h3>
+					<form action="">
+						<input type="text" placeholder="Email address">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>Copyright © 2015.Company name All rights reserved.</p>
+	</div>
+	
+	<!-- 回到顶部 -->
+	<div class="top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+	</div>
+</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/chromagallery.pkgd.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/backToTop.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(".mygallery").chromaGallery({
+		        color:'#000',
+		        gridMargin:15,
+		        maxColumns:5,
+		        dof:true,
+		        screenOpacity:0.8
+		    });
+		});
+			
+	</script>
+</html>

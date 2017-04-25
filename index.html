@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/backToTop.js"></script>
+<!-- <style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-size: 100%;
+		}
+		.clearfix{
+			clear:both;
+		}
+		body a{
+			transition: 0.5s all;
+		}
+
+
+		.container{
+			background: url(img/bg.png) no-repeat 0px 0px;
+			background-size:cover;
+			padding: 0;
+			width: 100%;
+		}
+
+		.navbar{
+			background-color: rgba(12, 12, 16, 1);
+			text-align: center;
+			margin: 0;
+		}
+
+		.navbar-brand{
+			font-size: 2.2em;
+			margin-left: 4em;
+			padding: 0.8em 0 0.5em 0;
+			font-family: "Hobo Std";
+		}
+
+
+
+		.collapse ul{
+			margin-right: 8em;
+			
+		}
+
+		.collapse ul li{
+			font-family: "Buxton Sketch";
+			font-size: 1.5em;
+			padding: 0.5em 1em 0.5em 1em;
+		}	
+
+		.banner{
+			margin-top:25em;
+		}
+
+		.banner .row{
+			padding-bottom: 5em;
+			color: #fff;
+		}
+
+		.banner .row .blue .banner-left,
+		.banner .row .red .banner-right{
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.banner .blue .banner-left{
+			width: 75%;
+			padding:3em;
+			border-radius: 0.6em;
+		}
+
+		.banner .row .blue .left-blue{
+			background-color:rgba(52, 55, 72, 0.61);
+		}
+
+		.banner .row .blue .left-blue:hover{
+			background: rgba(36, 42, 74, 0.71);
+		}
+
+		.banner .row .blue .left-blue .banner-left-icon{
+			float: left;
+			margin:10px 0 0 10px;
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			border-radius: 100px;
+		}
+
+		.banner .row .blue .left-blue .banner-left-info{
+			font-family: "微软雅黑";
+			text-align: center;
+		}
+
+		.banner .red .banner-right{
+			width: 75%;
+			padding:3em;
+			border-radius: 0.6em;
+		}
+
+
+		.banner .row .red .right-red{
+			background-color: rgba(255, 106, 74, 0.41);
+		}
+
+		.banner .row .red .right-red:hover{
+			 background: rgba(255, 106, 74, 0.63);
+		}
+
+		.banner .row .red .right-red .banner-right-icon{
+			float: left;
+			margin:10px 0 0 10px;
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			border-radius: 100px;
+		}
+
+		.banner .row .red .right-red .banner-right-info{
+			font-family: "微软雅黑";
+			text-align: center;
+		}
+
+		.welcome{
+			background: url(img/leaf.png) no-repeat 10px 61px;
+			padding: 8em 0;
+			text-align: center;
+			
+		}
+
+		.welcome-info{
+			width: 50%;
+			margin:0 auto;
+		}
+
+		.welcome-info h2{
+			font-family: 'Comic Sans MS';
+			font-size: 4em;
+				
+			color: #000;
+			text-align: center;
+		}
+
+		.welcome-info h5{
+			font-family: "Cinzel Decorative";
+		    font-size: 1.3em;
+				font-weight: 600;
+			    color: #020202;
+			    margin: 1.5em 0;
+		}
+
+		.welcome-info p{
+			font-family: "Giddyup Std";
+			color: #777;
+				font-size: 1.5em;
+			margin: 0;
+			line-height: 1.8em
+		}
+
+		.popular-wines{
+			width: 100%;
+			text-align: center;
+			padding: 0 0 5em 0;
+			margin:0 auto;
+		}
+
+		.popular-wines-header{
+			padding: 5em 0;
+		}
+
+		.popular-wines-header h1{
+			font-family: 'Comic Sans MS';
+			font-size: 4em;
+			color: #000;
+		}
+
+		.popular-wines .row{
+			width: 80%;
+			margin:0 auto;
+		}
+
+		.popular-wines .row .one{
+			vertical-align: middle;
+			text-align: center;
+			padding: 3.70em 2em;
+				background: #2B2B2B;
+			}
+
+		.popular-wines .row h5{
+			color: #ff6a4a;
+				font-size: 2em;
+				margin: 0;
+			text-transform: capitalize;
+		}
+
+		.popular-wines .row p{
+			color: #FFFFFF;
+			font-size: 1.5em;
+			margin: 0.7em 0;
+			line-height: 1.8em;
+		}
+
+		.popular-wines .row a{
+			margin-top: 1em;
+			display: inline-block;
+			padding: .2em 1em;
+			border-bottom: 2px solid #FFF;
+			border-top: 2px solid #FFF;
+			font-weight: bold;
+			font-size: 1em;
+			line-height: 2em;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		.popular-wines .row a:hover{
+			color: #ff6a4a;
+		}
+
+		.popular-wines .row .two img{
+			width: 100%;
+			border: 0;
+			margin: 1.5em 0;
+		}
+
+		.news{
+			width: 100%;
+			background: url(img/leaf.png) no-repeat 970px 150%;
+			padding: 5em 0 0 0;
+		}
+		.news .news-container{
+			width: 100%;
+			margin:0 auto;
+			
+		}
+
+		.news .news-container .news-header h1{
+			color: #000000;
+			font-size: 4em;
+			margin: 0;
+			text-align: center;
+			font-family: 'Comic Sans MS';
+		}
+
+		.news .news-container .news-content{
+			margin: 5em 5em;
+		}
+
+		.news .news-container .news-content img{
+			width: 98%;
+		}
+
+		.news .news-container .news-content .news-info{
+			margin-top: 2em;
+		}
+
+		.news .news-container .news-content .news-info a{
+			color: #ff6a4a;
+			font-size: 1.5em;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.news .news-container .news-content .news-info a:hover{
+			color: #1B242F;
+		}
+
+		.news .news-container .news-content .news-info p.date{
+			color: #D2D2D2;
+			font-size: 1em;
+			margin: 0.5em 0;
+		}
+
+		.news .news-container .news-content .news-info p.text{
+			color: #777;
+			font-size: 1.2em;
+			margin: 0;
+			line-height: 1.8em;
+		}
+
+		.footer{
+			padding: 3em 0;
+			background: #2B2B2B;
+		}
+
+		.footer .footer-container{
+			padding-right: 15px;
+			padding-left: 15px;
+			margin: 0 7.2em;
+		}
+
+		.footer .footer-container h3{
+			color: #FFFFFF;
+			font-size: 2em;
+			margin: 0 0 1em 0;
+			font-family: "Comic Sans MS";
+		}
+
+		.footer .footer-container ul li{
+			display: block;
+			margin: .5em 0;
+			color: #A2A2A2;
+		}
+
+		.footer .footer-container ul li a{
+			color: #A2A2A2;
+			font-size: 1em;
+			text-decoration: none;
+		}
+
+		.footer .footer-container ul li a:hover{
+			color: #fff;
+		}
+
+		.footer .footer-container form input[type='text']{
+			font-size: 1.2em;
+			margin-bottom: 1em;
+			width: 100%;			
+			border: 1px solid #ff9900;
+			background: #FFFFFF;
+			padding: 0.5em;
+			border-radius: 5px;
+		}
+
+		.footer .footer-container form input[type="submit"]{
+			color: #FFF;
+			background: #ff6a4a;
+			font-size: 1em;
+			border: none;
+			border-radius: 5px;
+			padding: 0.5em 1em;
+			transition: 0.5s all;
+		}
+
+		.footer .footer-container form input[type="submit"]:hover{
+			background-color: #faa;
+		}
+
+		.footer-bottom{
+			padding: 1em 0;
+			background: #191919;
+			text-align: center;
+		}
+
+		.footer-bottom p{
+			font-size: 1em;
+			color: #fff;
+			margin: 0;
+		}
+
+
+		.top{
+			background-color: #ff6a4a;
+			width: 1.4em;
+			height: 1.4em;
+			font-size: 2em;
+			text-align: center;
+			border-radius: 1.4em;
+			color: #aaf;
+			cursor: pointer;
+			position: fixed;
+			right:30px;
+			bottom:30px;
+			display: none;
+		}
+
+		.top:hover{
+			opacity: 0.7;
+		}
+
+		/*==================Responsive Start======================*/
+		@media only screen and (max-width: 1024px){
+			.container{
+				background: url(img/bg.png) no-repeat 0 0;
+				background-size: cover;
+			}
+
+			.navbar-brand{		
+				margin-left: 0.5em;
+			}
+
+			.collapse ul{
+				margin-right: 0.2em;
+			}
+
+			.nav ul li{
+				font-size: 1.2em;
+				padding: 0.5em 0.5em;
+			}
+
+
+
+			.banner {
+				margin-top: 15em;
+			}
+
+			.banner .blue .banner-left{
+				width: 70%;
+				padding: 1.2em;
+			}
+
+			.banner .red .banner-right{
+				width: 70%;
+				padding: 1.2em;
+			}
+
+			.banner .row{
+				margin: 0;
+			}
+
+			.banner .row .blue,
+			.banner .row .red{
+				padding: 0;
+			}
+
+
+			.welcome-info h2{
+				font-size: 3em;
+			}	
+
+			.popular-wines-header h1{
+				font-size: 3em;
+			}
+			.popular-wines .row h5{
+				font-size: 1.8em;
+			}
+			.popular-wines .row p{
+				font-size: 1.3em;
+			}
+			.news .news-container .news-header{
+				margin-left: 24em;
+			}
+
+			.news .news-container .news-header h1{
+				text-align: left;
+				font-size: 3em;
+			}
+
+			.news .news-container .news-content img{
+				width: 98%;
+			}
+
+			.news .news-container .news-content .left{
+				
+				padding-left: 4em;
+			}
+				
+			.news .news-container .news-content .right{
+				padding-right: 4em;
+				
+			}
+			
+
+			.news .news-container .news-content .news-info p.text{
+				font-size: 1em;
+				/*margin-right: 4em;*/
+			}
+
+			.news{
+				background: url(img/leaf.png) no-repeat -200% 150%;
+			}
+
+			.footer .footer-container h3{
+				font-size: 1.5em;
+			}
+
+			.footer .footer-container ul li a{
+				font-size: 0.8em;	
+			}
+		}
+
+
+		@media only screen and (max-width: 800px){
+			.container{
+				background: url(img/bg.png) no-repeat 0 0;
+				background-size: contain;
+				width: 100%;
+			}
+
+			.navbar-inverse .navbar-header a{
+				font-size: 2em;
+			}
+
+			.collapse ul li{
+				font-size: 1.2em;
+				padding: 0.5em 0.5em;
+			}
+			
+			.navbar-inverse .navbar-brand{
+				margin-bottom: 0.5em;
+			}
+
+			.banner{
+				margin-top: 11em;
+			}
+
+			.banner .row .banner-left-info h3,
+			.banner .row .banner-right-info h3{
+				font-size: 1.5em;
+			}
+				
+			.banner .row .banner-left-info p,
+			.banner .row .banner-right-info p{
+				font-size: 0.8em;
+			}
+
+			.banner .row .blue,
+			.banner .row .red{
+				float: left;
+				padding-left: 2rem;
+				width: 47%;
+			}
+				
+			
+
+			.banner .row .blue .left-blue .banner-left-icon,
+			.banner .row .red .right-red .banner-right-icon{
+				width: 55px;
+				height: 55px;
+				border-radius: 55px;
+			}
+
+				
+			.banner .row .blue .banner-left,
+			.banner .row .red .banner-right{
+				width: 85%;
+			}
+
+			.news .news-container .news-header{
+				margin: 0;
+			}
+			.news .news-container .news-header h1{
+				text-align: center;
+			}
+
+			.news .news-container .news-content .left{
+				padding-left: 3em;
+			}
+			.news .news-container .news-content .right{
+				padding-left: 3em;
+				padding-right: 0;
+				margin-top: 3em;
+			}
+			
+
+			.footer .footer-container{
+				margin: 0;
+				padding: 0;
+			}
+			.footer .footer-container .row{
+				padding: 0;
+				margin: 0;
+
+			}
+
+			.footer .footer-container .row .col-md-3:first-child{
+				display: none;
+			}
+
+			.footer .footer-container .row .col-md-3{
+				float: left;
+				margin-left: 2%;
+			}
+
+			.footer .footer-container ul li a{
+				font-size: 1em;		
+			}
+
+			.footer .footer-container .row .col-md-3:nth-child(4){
+				width: 32%;
+			}
+			
+		}
+
+		@media only screen and (min-width: 441px) and (max-width: 667px){
+			.banner{
+				margin-top: 7em;
+			}
+
+			.banner .row .blue .left-blue .banner-left-info h3,
+			.banner .row .red .right-red .banner-right-info h3{
+				font-size: 1em;
+				font-weight: bold;
+			}
+
+			.banner .row .blue .left-blue .banner-left-info p,
+			.banner .row .red .right-red .banner-right-info p{
+				font-size: 0.1em;
+			}
+
+			.banner .row .blue .left-blue .banner-left-icon,
+			.banner .row .red .right-red .banner-right-icon{
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+			}
+
+			.welcome{
+				padding-top: 3em;
+			}
+		}
+
+		@media only screen and (max-width: 440px){
+			.container{
+				background: url(img/bg2.jpg) no-repeat 0 0;
+				background-size: cover;
+			}
+
+			.banner .row .blue, 
+			.banner .row .red{
+				width: 90%;
+			}
+
+			.banner .row .blue .left-blue{
+				margin: 0 auto;
+			}
+			.banner .row .red .right-red{
+				margin: 0 auto;
+			}
+
+			.banner .row{
+				width: 100%;
+				margin: 10em 0 0 0;
+			}
+
+			.banner .row .red{
+				margin-top: 5%;
+			}
+
+			.banner .row .blue .left-blue .banner-left-icon,
+			.banner .row .red .right-red .banner-right-icon{
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+			}
+
+			.banner .row .blue .left-blue .banner-left-info h3,
+			.banner .row .red .right-red .banner-right-info h3{
+				font-size: 1.5em;
+			}
+
+			.banner .row .blue .left-blue .banner-left-info p,
+			.banner .row .red .right-red .banner-right-info p{
+				font-size: .8em;
+			}
+
+			.welcome{
+				background: url(img/leaf.png) no-repeat 100 200;
+				background-size: 500px 200px;
+				padding: 4em 0 0 0;
+			}
+
+			.welcome-info h2{
+				font-size: 2em;
+				font-weight: bold;
+			}
+
+			.welcome-info h5{
+				font-size: 0.6em;
+				margin: 2em 0;
+			}
+
+			.welcome-info p{
+				font-size: 1em;
+			}
+
+			.popular-wines-header{
+				padding: 3em 0;
+			}
+
+			.popular-wines-header h1{
+				font-size: 2em;
+				font-weight: bold;
+			}
+
+			.popular-wines .row h5{
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+
+			.popular-wines .row p{
+				font-size: 0.8em;
+			}
+
+			.news .news-container .news-header h1{
+				font-size: 2em;
+				font-weight: bold;
+			}
+
+			.news .news-container .news-content{
+				margin: 2em 1em;
+			}
+
+			.news .news-container .news-content .left,
+			.news .news-container .news-content .right{
+				padding: 0 1.2em;
+			}
+
+			.news .news-container .news-content .news-info a{
+				font-size: 1em;
+			}
+
+			.news .news-container .news-content .news-info p.date,
+			.news .news-container .news-content .news-info p.text{
+				font-size: 0.6em;
+			}
+
+			.footer .footer-container{
+				margin: 0;
+				padding: 0;
+			}
+
+			.footer .footer-container h3{
+				font-size: 1em;
+			}
+
+			.footer .footer-container ul li{
+				font-size: .2em;
+			}
+
+			.footer .footer-container ul li{
+				margin: 0!important;
+				display: block;
+			}
+
+			.footer .footer-container .col-md-3{
+				float: left;
+				margin-left: 1.2em;
+			}
+
+			.footer .footer-container .row .col-md-3:last-child{
+				margin-top: 2%;
+			}
+
+			.footer .footer-container form {
+				width: 180%;
+			}
+
+			.footer .footer-container form input[type='text']{
+				font-size: .9em;
+			}
+
+			.footer .footer-container form input[type="submit"]{
+				font-size: 0.7em;
+			}
+
+			.footer-bottom p{
+				font-size: 0.3em;
+			}
+		}
+	</style>
+-->
+</head>
+<body style="overflow:scroll;overflow-x:hidden">
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">	
+					<a href="javascript:" class="navbar-brand">Red Wine</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			</div>
+
+			<div id="mynavbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="gallery2.html">Gallery2</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+				</ul>	
+			</div>
+		</nav>
+		<div class="banner">
+			<div class="row">
+				<div class="col-md-6 blue ">
+					<div class="banner-left left-blue">
+						<div class="banner-left-icon">		
+						</div>
+						<div class="banner-left-info">
+							<h3>Red Wine</h3>
+							<p>Forever Elegant Chateau Figeac. LOGAN : Every drink every taste!</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-6 red ">
+					<div class="banner-right right-red">
+						<div class="banner-right-icon">
+							
+						</div>
+						<div class="banner-right-info">
+							<h3>Hennessy</h3>
+							<p>To me， the past is black and white， but the future is always color</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="welcome">
+		<div class="welcome-info">
+			<h2>WELCOME</h2>
+			<h5>Lorem ipsum dolor sit amet consectetur adipiscing elit.</h5>
+			<p>Morbi condimentum imperdiet placerat. Nullam in nisl eget turpis convallis venenatis. Cras cursus elementum justo nec bibendum. Donec quis nisi cursus, vestibulum elit eget, sagittis ligula.</p>
+		</div>
+	</div>
+
+	<div class="popular-wines clearfix">
+		<div class="popular-wines-header">
+			<h1>POPULAR WINES</h1>
+		</div>
+
+		<div class="popular-wines-content clearfix">
+			<div class="row ">
+				<div class="col-md-4 one">
+					<h5>Penfolds</h5>
+					<p>non suscipit leo fringilla non suscipit leo fringilla molestie</p>
+					<a href="javascript:">MORE</a>
+				</div>
+				<div class="col-md-4 two">
+					<img src="img/wine.jpg" alt="">
+				</div>
+				<div class="col-md-4 one">
+					<h5>Yellow Tail</h5>
+					<p>non suscipit leo fringilla non suscipit leo fringilla molestie</p>
+					<a href="javascript:">MORE</a>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-md-4 two">
+					<img src="img/greenpurple.jpg" alt="">
+				</div>
+				<div class="col-md-4 one">
+					<h5>Moscato d'Asti</h5>
+					<p>non suscipit leo fringilla non suscipit leo fringilla molestie</p>
+					<a href="javascript:">MORE</a>
+				</div>
+				<div class="col-md-4 two">
+					<img src="img/purple.png" alt="">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 one">
+					<h5>Gewurztraminer</h5>
+					<p>non suscipit leo fringilla non suscipit leo fringilla molestie</p>
+					<a href="javascript:">MORE</a>
+				</div>
+				<div class="col-md-4 two">
+					<img src="img/yellowpurple.jpg" alt="">
+				</div>
+				<div class="col-md-4 one">
+					<h5>Doux & Dulce</h5>
+					<p>non suscipit leo fringilla non suscipit leo fringilla molestie</p>
+					<a href="javascript:">MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="news clearfix">
+		<div class="news-container">
+			<div class="news-header">
+				<h1>NEWS & EVENTS</h1>
+			</div>
+			<div class="news-content clearfix">
+				<div class="row clearfix">
+					<div class="col-md-6 left">
+						<img src="img/left.jpg" alt="">
+						<div class="news-info">
+							<a href="javascript:">Example News</a>
+							<p class="date">19th July | 10:00 - 12:00</p>
+							<p class="text">In hac habitasse platea dictumst. Nullam orci ante, tempor ac blandit eget, tristique non neque. Pellentesque eu leo tortor.</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 right ">
+						<img src="img/right.jpg" alt="">
+						<div class="news-info">
+							<a href="javascript:">Example News</a>
+							<p class="date">20th June | 18:00 - 20:00</p>
+							<p class="text">Suspendisse feugiat, augue ac tincidunt vestibulum, ligula orci tincidunt arcu, quis scelerisque ante magna quis urna. Ut quis est congue dui porttitor porta. </p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
+	<div id="login" style="display:none" class="modal fade">
+		
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<div class="close" data-dismiss="modal">×</div>
+						<h3>用户登录</h3>
+					</div>
+
+					<div class="modal-body">
+						<div class="username">
+							用户名:
+							<br>
+							<input type="text" style="margin-top:0.5em"> 
+						</div>
+						<br>
+						<div class="password">
+							密码:		
+							<br>	 
+							<input type="password" style="margin-top:0.5em">
+						</div>
+						
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn btn-primary save">登录</button>
+						<button class="btn btn-danger" >注册</button>
+					</div>
+
+				</div>
+			</div>
+		
+	</div>
+
+
+
+
+	<div class="footer">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>DETAIL</h3>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="javascript:">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>SOCIAL</h3>
+					<ul>
+						<li><a href="javascript:">QQ</a></li>
+						<li><a href="javascript:">Wetchat</a></li>
+						<li><a href="javascript:">Weibo</a></li>
+						<li><a href="javascript:">Google+</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>CONTACT</h3>
+					<ul>
+						<li><a href="javascript:">756 gt globel Place,</a></li>
+						<li><a href="javascript:">CD-Road,M 07 435.</a></li>
+						<li><a href="javascript:">Telephone: +1 234 567 9871</a></li>
+						<li><a href="javascript:">FAX: +1 234 567 9871</a></li>
+						<li>
+							Email:
+							<a href="javascript:">Example@mail.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>NEWSLETTER</h3>
+					<form action="">
+						<input type="text" placeholder="Email address">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>Copyright © 2015.Company name All rights reserved.</p>
+	</div>
+	
+	<!-- 回到顶部 -->
+	<div class="top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+	</div>
+</body>
+</html>
